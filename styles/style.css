@@ -91,7 +91,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald" Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -100,11 +100,11 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed" Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 90% ; 
 }
 
 .content__video-card-thumbnail {
@@ -122,7 +122,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed" Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -130,7 +130,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: "Oswald" Arial, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -145,6 +145,9 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  display: block;
+  margin: 2px;
+  padding: 2px;
 }
 
 .visually-hidden {
@@ -182,7 +185,7 @@ ol {
   border-right: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed" Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -211,17 +214,17 @@ ol {
   background-color: transparent;
   color: #FFF;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed" Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  height: 34px;
+  min-height: 34px;
   padding: 0;
 }
 
 .search-form__submit-button {
-  width: 194px;
+  min-width: 194px;
 }
 
 .more-button {
@@ -249,7 +252,11 @@ ol {
   border: 1px solid white;
 }
 
-.search-form__label-text:hover {
+.search-form__checkbox {
+  
+}
+
+.search-form__label:hover {
   text-decoration-line: underline;
 }
 
@@ -271,12 +278,6 @@ ol {
 }
 
 /*карточки*/
-
-.content__card-link {
-  display: block;
-  margin: 2px;
-  padding: 2px;
-}
 
 .content__card-link_current {
   background-color: #545050;

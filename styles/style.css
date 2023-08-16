@@ -91,7 +91,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald" Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -100,7 +100,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed" Arial, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -122,15 +122,16 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed" Arial, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: default;
 }
 
 .title {
-  font-family: "Oswald" Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -185,7 +186,7 @@ ol {
   border-right: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.70);
-  font-family: "Fira Sans Condensed" Arial, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -214,7 +215,7 @@ ol {
   background-color: transparent;
   color: #FFF;
   text-align: center;
-  font-family: "Fira Sans Condensed" Arial, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -241,22 +242,21 @@ ol {
   border: 1px solid white;
 }
 
-.search-form__pseudo-checkbox:first-of-type:active::before {
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  background-color: white;
+  display: block;
   width: 15px;
   height: 15px;
+  background-color: white;
 }
 
 .search-form__pseudo-checkbox:has(:focus-visible) {
   border: 1px solid white;
 }
 
-.search-form__checkbox {
-  
-}
 
-.search-form__label:hover {
+.search-form__label:not(:only-of-type):hover {
   text-decoration-line: underline;
 }
 
@@ -264,12 +264,13 @@ ol {
   outline: none;
 }
 
-.button:active {
-  background-color: #545050;
-}
-
 .button:hover {
   text-decoration-line: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus-visible {
